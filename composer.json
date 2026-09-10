@@ -1,0 +1,20 @@
+{
+    "name": "mambusrl/spoki-whatsapp",
+    "description": "PHP client for the Spoki REST API",
+    "type": "library",
+    "require": {
+        "php": ">=8.3",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-ctype": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "MambuSRL\\Spoki\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "php tests/run.php"
+    },
+    "license": "MIT"
+}

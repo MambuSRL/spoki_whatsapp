@@ -1,0 +1,620 @@
+{
+  "source": "https://documenter.getpostman.com/view/21611004/UzBqnPvF",
+  "operations": [
+    {
+      "name": "Accounts / List, search, and filter accounts",
+      "method": "GET",
+      "path": "/api/1/accounts/"
+    },
+    {
+      "name": "Accounts / Retrieve account",
+      "method": "GET",
+      "path": "/api/1/accounts/{{id}}/"
+    },
+    {
+      "name": "Accounts / Retrieve account by phone",
+      "method": "GET",
+      "path": "/api/1/accounts/phone/{{phone}}/"
+    },
+    {
+      "name": "Accounts / Current report",
+      "method": "GET",
+      "path": "/api/1/accounts/{{id}}/current_report/"
+    },
+    {
+      "name": "Accounts / Create Onboarding Link",
+      "method": "POST",
+      "path": "/api/1/accounts/{{id}}/onboarding/"
+    },
+    {
+      "name": "Agencies / List agencies",
+      "method": "GET",
+      "path": "/api/1/agencies/"
+    },
+    {
+      "name": "Agencies / Retrieve agency",
+      "method": "GET",
+      "path": "/api/1/agencies/{{id}}/"
+    },
+    {
+      "name": "Automations / Start Automation",
+      "method": "POST",
+      "path": "/wh/ap/{{uuid}}/"
+    },
+    {
+      "name": "Automations / Start Automation for many contacts",
+      "method": "POST",
+      "path": "/wh/ap/{{uuid}}/bulk/"
+    },
+    {
+      "name": "Automations / List, search, and filter automations",
+      "method": "GET",
+      "path": "/api/1/automations/"
+    },
+    {
+      "name": "Automations / Retrieve automation",
+      "method": "GET",
+      "path": "/api/1/automations/{{id}}/"
+    },
+    {
+      "name": "Automations / Create Automation",
+      "method": "POST",
+      "path": "/api/1/automations/"
+    },
+    {
+      "name": "Automations / Custom fields used",
+      "method": "GET",
+      "path": "/api/1/automations/{{id}}/custom-fields-used/"
+    },
+    {
+      "name": "Campaigns / List, search, and filter campaigns",
+      "method": "GET",
+      "path": "/api/1/campaigns/"
+    },
+    {
+      "name": "Campaigns / Create campaign",
+      "method": "POST",
+      "path": "/api/1/campaigns/"
+    },
+    {
+      "name": "Campaigns / Retrieve campaign",
+      "method": "GET",
+      "path": "/api/1/campaigns/{{id}}/"
+    },
+    {
+      "name": "Campaigns / Update campaign",
+      "method": "PATCH",
+      "path": "/api/1/campaigns/{{id}}/"
+    },
+    {
+      "name": "Campaigns / Delete campaign",
+      "method": "DELETE",
+      "path": "/api/1/campaigns/{{id}}/"
+    },
+    {
+      "name": "Contacts / List, search, and filter contacts",
+      "method": "GET",
+      "path": "/api/1/contacts/"
+    },
+    {
+      "name": "Contacts / Sync contacts",
+      "method": "POST",
+      "path": "/api/1/contacts/sync_all/"
+    },
+    {
+      "name": "Contacts / Add Operator",
+      "method": "POST",
+      "path": "/api/1/contacts/{{id}}/add_operator/"
+    },
+    {
+      "name": "Contacts / Remove Operator",
+      "method": "POST",
+      "path": "/api/1/contacts/{{id}}/remove_operator/"
+    },
+    {
+      "name": "Contacts / Create or update contact",
+      "method": "POST",
+      "path": "/api/1/contacts/sync/"
+    },
+    {
+      "name": "Contacts / Retrieve contact",
+      "method": "GET",
+      "path": "/api/1/contacts/{{id}}/"
+    },
+    {
+      "name": "Contacts / Update contact",
+      "method": "PATCH",
+      "path": "/api/1/contacts/{{id}}/"
+    },
+    {
+      "name": "Contacts / Delete contact",
+      "method": "DELETE",
+      "path": "/api/1/contacts/{{id}}/"
+    },
+    {
+      "name": "Contacts / Block Contact",
+      "method": "PATCH",
+      "path": "/api/1/contacts/{{id}}/"
+    },
+    {
+      "name": "Contacts / Unlock Contact",
+      "method": "PATCH",
+      "path": "/api/1/contacts/{{id}}/"
+    },
+    {
+      "name": "Custom Fields / List, search, and filter custom fields",
+      "method": "GET",
+      "path": "/api/1/custom-fields/"
+    },
+    {
+      "name": "Custom Fields / Create custom field",
+      "method": "POST",
+      "path": "/api/1/custom-fields/"
+    },
+    {
+      "name": "Custom Fields / Retrieve custom field",
+      "method": "GET",
+      "path": "/api/1/custom-fields/{{id}}/"
+    },
+    {
+      "name": "Custom Fields / Update custom field",
+      "method": "PATCH",
+      "path": "/api/1/custom-fields/{{id}}/"
+    },
+    {
+      "name": "Custom Fields / Delete custom field",
+      "method": "DELETE",
+      "path": "/api/1/custom-fields/{{id}}/"
+    },
+    {
+      "name": "Embedding via iframe / Auth User",
+      "method": "POST",
+      "path": "/api/1/auth/get_authentication_token/"
+    },
+    {
+      "name": "Invitations / List, search, and filter invitations",
+      "method": "GET",
+      "path": "/api/1/invitations/"
+    },
+    {
+      "name": "Invitations / Retrieve invitation",
+      "method": "GET",
+      "path": "/api/1/invitations/{{id}}/"
+    },
+    {
+      "name": "Invitations / Invite new user by email",
+      "method": "POST",
+      "path": "/api/1/invitations/"
+    },
+    {
+      "name": "Invitations / Resend invitation email",
+      "method": "POST",
+      "path": "/api/1/invitations/{{id}}/send/"
+    },
+    {
+      "name": "Invitations / Update role",
+      "method": "POST",
+      "path": "/api/1/invitations/{{id}}/update_role/"
+    },
+    {
+      "name": "Invitations / Delete invitation",
+      "method": "DELETE",
+      "path": "/api/1/invitations/{{id}}/"
+    },
+    {
+      "name": "Lists / List, search, and filter lists",
+      "method": "GET",
+      "path": "/api/1/lists/"
+    },
+    {
+      "name": "Lists / Create list",
+      "method": "POST",
+      "path": "/api/1/lists/"
+    },
+    {
+      "name": "Lists / Retrieve list",
+      "method": "GET",
+      "path": "/api/1/lists/{{id}}/"
+    },
+    {
+      "name": "Lists / Create or update contacts, then add to the list",
+      "method": "POST",
+      "path": "/api/1/lists/{{id}}/sync_contacts/"
+    },
+    {
+      "name": "Lists / Remove all contacts",
+      "method": "POST",
+      "path": "/api/1/lists/{{id}}/remove_all_contacts/"
+    },
+    {
+      "name": "Lists / Delete list",
+      "method": "DELETE",
+      "path": "/api/1/lists/{{id}}/"
+    },
+    {
+      "name": "Lists / Remove contacts",
+      "method": "POST",
+      "path": "/api/1/lists/{{id}}/remove_contacts/"
+    },
+    {
+      "name": "Messages / Send Template",
+      "method": "POST",
+      "path": "/api/1/messages/send/"
+    },
+    {
+      "name": "Messages / Send Template With Dynamic Header Media",
+      "method": "POST",
+      "path": "/api/1/messages/send/"
+    },
+    {
+      "name": "Messages / Send Template Carousel With Dynamic Header Medias",
+      "method": "POST",
+      "path": "/api/1/messages/send/"
+    },
+    {
+      "name": "Messages / Send Template Carousel With Dynamic Multilanguage Header Medias",
+      "method": "POST",
+      "path": "/api/1/messages/send/"
+    },
+    {
+      "name": "Messages / Send Message Text",
+      "method": "POST",
+      "path": "/api/1/messages/send/"
+    },
+    {
+      "name": "Messages / Send Message With Buttons",
+      "method": "POST",
+      "path": "/api/1/messages/send/"
+    },
+    {
+      "name": "Messages / Send Message List",
+      "method": "POST",
+      "path": "/api/1/messages/send/"
+    },
+    {
+      "name": "Reports / List, search, and filter reports",
+      "method": "GET",
+      "path": "/api/1/reports/"
+    },
+    {
+      "name": "Reports / List, search, and filter reports V2",
+      "method": "GET",
+      "path": "/api/1/reports/detailed/"
+    },
+    {
+      "name": "Roles / List, search, and filter roles",
+      "method": "GET",
+      "path": "/api/1/roles/"
+    },
+    {
+      "name": "Roles / Retrieve role",
+      "method": "GET",
+      "path": "/api/1/roles/{{id}}/"
+    },
+    {
+      "name": "Roles / Add Service User",
+      "method": "POST",
+      "path": "/api/1/roles/add_service_user/"
+    },
+    {
+      "name": "Roles / Generate Private Key",
+      "method": "POST",
+      "path": "/api/1/roles/{{id}}/generate_private_key/"
+    },
+    {
+      "name": "Roles / Has Private Key",
+      "method": "GET",
+      "path": "/api/1/roles/{{id}}/has_private_key/"
+    },
+    {
+      "name": "Roles / Update Role",
+      "method": "POST",
+      "path": "/api/1/roles/{{id}}/update_role/"
+    },
+    {
+      "name": "Roles / Delete role",
+      "method": "DELETE",
+      "path": "/api/1/roles/{{id}}/"
+    },
+    {
+      "name": "Tags / List, search, and filter tags",
+      "method": "GET",
+      "path": "/api/1/tags/"
+    },
+    {
+      "name": "Tags / Retrieve tag",
+      "method": "GET",
+      "path": "/api/1/tags/{{id}}/"
+    },
+    {
+      "name": "Templates / List, search, and filter templates",
+      "method": "GET",
+      "path": "/api/1/templates/"
+    },
+    {
+      "name": "Templates / Create template",
+      "method": "POST",
+      "path": "/api/1/templates/"
+    },
+    {
+      "name": "Templates / Clone template",
+      "method": "GET",
+      "path": "/api/1/templates/{{id}}/clone/"
+    },
+    {
+      "name": "Templates / Update template",
+      "method": "PATCH",
+      "path": "/api/1/templates/{{id}}/"
+    },
+    {
+      "name": "Templates / Request template",
+      "method": "POST",
+      "path": "/api/1/templates/{{id}}/submit/"
+    },
+    {
+      "name": "Templates / Back template to Draft",
+      "method": "POST",
+      "path": "/api/1/templates/{{id}}/back_to_draft/"
+    },
+    {
+      "name": "Templates / Retrieve template",
+      "method": "GET",
+      "path": "/api/1/templates/{{id}}/"
+    },
+    {
+      "name": "Templates / Delete template",
+      "method": "DELETE",
+      "path": "/api/1/templates/{{id}}/"
+    },
+    {
+      "name": "Tickets / List, search, and filter tickets",
+      "method": "GET",
+      "path": "/api/1/tickets/"
+    },
+    {
+      "name": "Tickets / Create ticket",
+      "method": "POST",
+      "path": "/api/1/tickets/"
+    },
+    {
+      "name": "Tickets / Retrieve ticket",
+      "method": "GET",
+      "path": "/api/1/tickets/{{id}}/"
+    },
+    {
+      "name": "Tickets / Update ticket",
+      "method": "PATCH",
+      "path": "/api/1/tickets/{{id}}/"
+    },
+    {
+      "name": "Tickets / Delete ticket",
+      "method": "DELETE",
+      "path": "/api/1/tickets/{{id}}/"
+    },
+    {
+      "name": "Media / List, search, and filter media",
+      "method": "GET",
+      "path": "/api/1/media/"
+    },
+    {
+      "name": "Media / Create media",
+      "method": "POST",
+      "path": "/api/1/media/"
+    },
+    {
+      "name": "Media / Retrieve media",
+      "method": "GET",
+      "path": "/api/1/media/{{id}}/"
+    },
+    {
+      "name": "Media / Update media",
+      "method": "PATCH",
+      "path": "/api/1/media/{{id}}/"
+    },
+    {
+      "name": "Media / Delete media",
+      "method": "DELETE",
+      "path": "/api/1/media/{{id}}/"
+    },
+    {
+      "name": "Webhooks / API / List, search, and filter webhooks",
+      "method": "GET",
+      "path": "/api/1/external-webhooks/"
+    },
+    {
+      "name": "Webhooks / API / Create webhook",
+      "method": "POST",
+      "path": "/api/1/external-webhooks/"
+    },
+    {
+      "name": "Webhooks / API / Retrieve webhook",
+      "method": "GET",
+      "path": "/api/1/external-webhooks/{{id}}/"
+    },
+    {
+      "name": "Webhooks / API / Update webhook",
+      "method": "PATCH",
+      "path": "/api/1/external-webhooks/{{id}}/"
+    },
+    {
+      "name": "Webhooks / API / Delete webhook",
+      "method": "DELETE",
+      "path": "/api/1/external-webhooks/{{id}}/"
+    },
+    {
+      "name": "Webhooks / API / Get expands",
+      "method": "GET",
+      "path": "/api/1/external-webhooks/{{id}}/expands/"
+    },
+    {
+      "name": "Webhooks / API / Set expands",
+      "method": "POST",
+      "path": "/api/1/external-webhooks/{{id}}/expands/"
+    },
+    {
+      "name": "Webhooks / API / Send test webhook",
+      "method": "POST",
+      "path": "/api/1/external-webhooks/{{id}}/test/"
+    },
+    {
+      "name": "Webhooks / API / Rotate secret",
+      "method": "POST",
+      "path": "/api/1/external-webhooks/{{id}}/rotate_secret/"
+    },
+    {
+      "name": "Partners / Partners / Deprecated / Create Conversations Subrecharge - Software Vendor Only - DEPRECATED",
+      "method": "POST",
+      "path": "/api/1/partners/create_conversations_subrecharge/"
+    },
+    {
+      "name": "Partners / Partners / List, search and filter partners",
+      "method": "GET",
+      "path": "/api/1/partners/"
+    },
+    {
+      "name": "Partners / Partners / Get associated accounts",
+      "method": "GET",
+      "path": "/api/1/partners/accounts/"
+    },
+    {
+      "name": "Partners / Partners / Create Onboarding Link",
+      "method": "POST",
+      "path": "/api/1/partners/onboarding/"
+    },
+    {
+      "name": "Partners / Partners / Create API Key For Account",
+      "method": "POST",
+      "path": "/api/1/partners/create_api_key_for_account/"
+    },
+    {
+      "name": "Partners / Partners / Revoke API Key For Account",
+      "method": "POST",
+      "path": "/api/1/partners/revoke_api_key_for_account/"
+    },
+    {
+      "name": "Partners / Partners / Add Software Vendor Clients",
+      "method": "POST",
+      "path": "/api/1/partners/add_sv_clients/"
+    },
+    {
+      "name": "Partners / Partners / Create Meta Credit Subrecharge",
+      "method": "POST",
+      "path": "/api/1/partners/create_subrecharge/"
+    },
+    {
+      "name": "Partners / Partners / Set Account Profit Margins - Software Vendor Only",
+      "method": "POST",
+      "path": "/api/1/partners/set_profits/"
+    },
+    {
+      "name": "Partners / Partners / Move Credit From Account - Software Vendor Only",
+      "method": "POST",
+      "path": "/api/1/partners/move_credit_from_account/"
+    },
+    {
+      "name": "Partners / Partners / Get account report",
+      "method": "GET",
+      "path": "/api/1/partners/get_account_report/"
+    },
+    {
+      "name": "Partners / Partners / Get account forecasts",
+      "method": "GET",
+      "path": "/api/1/partners/get_account_forecasts/"
+    },
+    {
+      "name": "Partners / Partner Roles / List, search, and filter roles",
+      "method": "GET",
+      "path": "/api/1/partner-roles/"
+    },
+    {
+      "name": "Partners / Partner Roles / Retrieve role",
+      "method": "GET",
+      "path": "/api/1/partner-roles/{{id}}/"
+    },
+    {
+      "name": "Partners / Partner Roles / Generate Private Key",
+      "method": "POST",
+      "path": "/api/1/partner-roles/{{id}}/generate_private_key/"
+    },
+    {
+      "name": "Partners / Partner Roles / Has Private Key",
+      "method": "GET",
+      "path": "/api/1/partner-roles/{{id}}/has_private_key/"
+    },
+    {
+      "name": "Partners / Partner Roles / Update Role",
+      "method": "POST",
+      "path": "/api/1/partner-roles/{{id}}/update_role/"
+    },
+    {
+      "name": "Partners / Partner Roles / Delete role",
+      "method": "DELETE",
+      "path": "/api/1/partner-roles/{{id}}/"
+    },
+    {
+      "name": "Partners / Partner Invitations / List, search, and filter invitations",
+      "method": "GET",
+      "path": "/api/1/partner-invitations/"
+    },
+    {
+      "name": "Partners / Partner Invitations / Retrieve invitation",
+      "method": "GET",
+      "path": "/api/1/partner-invitations/{{id}}/"
+    },
+    {
+      "name": "Partners / Partner Invitations / Invite new user by email",
+      "method": "POST",
+      "path": "/api/1/partner-invitations/"
+    },
+    {
+      "name": "Partners / Partner Invitations / Resend invitation email",
+      "method": "POST",
+      "path": "/api/1/partner-invitations/{{id}}/send/"
+    },
+    {
+      "name": "Partners / Partner Invitations / Update role",
+      "method": "POST",
+      "path": "/api/1/partner-invitations/{{id}}/update_role/"
+    },
+    {
+      "name": "Partners / Partner Invitations / Delete invitation",
+      "method": "DELETE",
+      "path": "/api/1/partner-invitations/{{id}}/"
+    },
+    {
+      "name": "Channels / List channels",
+      "method": "GET",
+      "path": "/api/1/channel/"
+    },
+    {
+      "name": "Channels / Retrieve channel",
+      "method": "GET",
+      "path": "/api/1/channel/{{id_channel}}/"
+    },
+    {
+      "name": "Channels / Create channel",
+      "method": "POST",
+      "path": "/api/1/channel/"
+    },
+    {
+      "name": "Channels / Rename channel",
+      "method": "PATCH",
+      "path": "/api/1/channel/{{id_channel}}/"
+    },
+    {
+      "name": "Channels / Set primary channel",
+      "method": "POST",
+      "path": "/api/1/channel/{{id_channel}}/set-primary/"
+    },
+    {
+      "name": "Channels / Refresh WhatsApp phone status",
+      "method": "POST",
+      "path": "/api/1/channel/{{id_channel}}/refresh-wa-status/"
+    },
+    {
+      "name": "Channels / Lookup channel by phone",
+      "method": "GET",
+      "path": "/api/1/channel/phone/:identifier/"
+    }
+  ]
+}

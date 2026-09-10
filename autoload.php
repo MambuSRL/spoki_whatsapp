@@ -1,11 +1,12 @@
 <?php
-/**
- * Automatically load all files in the same directory as this file
- */
-foreach (scandir(dirname(__FILE__)) as $filename) {
-    $path = dirname(__FILE__) . DIRECTORY_SEPARATOR. $filename;
-    $ext = pathinfo($path, PATHINFO_EXTENSION);
-    if (is_file($path) && $path != __FILE__ && $ext == "php") {
-        require $path;
+
+spl_autoload_register(static function (string $class): void {
+    $prefix = 'MambuSRL\\Spoki\\';
+    if (!str_starts_with($class, $prefix)) {
+        return;
     }
-}
+    $path = __DIR__ . '/src/' . str_replace('\\', '/', substr($class, strlen($prefix))) . '.php';
+    if (is_file($path)) {
+        require_once $path;
+    }
+});
